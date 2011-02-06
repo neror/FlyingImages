@@ -73,7 +73,7 @@
   } 
   
   for (CALayer *imageLayer in imageLayerEnumerator) {
-    CATransform3D currentTransform = [imageLayer transform];
+    CATransform3D currentTransform = [[imageLayer presentationLayer] transform];
     CATransform3D newTransform;
     
     if(shouldReverse_) {
