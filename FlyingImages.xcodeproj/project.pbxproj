@@ -10,26 +10,12 @@
 		DFFED0F512FE04D900AB2E2A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFED0F412FE04D900AB2E2A /* Cocoa.framework */; };
 		DFFED0FF12FE04D900AB2E2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFFED0FD12FE04D900AB2E2A /* InfoPlist.strings */; };
 		DFFED10212FE04D900AB2E2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFED10112FE04D900AB2E2A /* main.m */; };
-		DFFED10512FE04D900AB2E2A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DFFED10312FE04D900AB2E2A /* Credits.rtf */; };
 		DFFED10812FE04D900AB2E2A /* FlyingImagesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFED10712FE04D900AB2E2A /* FlyingImagesAppDelegate.m */; };
 		DFFED10B12FE04DA00AB2E2A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFED10912FE04DA00AB2E2A /* MainMenu.xib */; };
-		DFFED11212FE04DA00AB2E2A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFED0F412FE04D900AB2E2A /* Cocoa.framework */; };
-		DFFED11A12FE04DA00AB2E2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFFED11812FE04DA00AB2E2A /* InfoPlist.strings */; };
-		DFFED11D12FE04DA00AB2E2A /* FlyingImagesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DFFED11C12FE04DA00AB2E2A /* FlyingImagesTests.h */; };
-		DFFED11F12FE04DA00AB2E2A /* FlyingImagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFED11E12FE04DA00AB2E2A /* FlyingImagesTests.m */; };
 		DFFED12912FE06EF00AB2E2A /* CA.png in Resources */ = {isa = PBXBuildFile; fileRef = DFFED12812FE06EF00AB2E2A /* CA.png */; };
 		DFFED12B12FE0A5E00AB2E2A /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFED12A12FE0A5E00AB2E2A /* Quartz.framework */; };
+		DFFED13E12FE1E6600AB2E2A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFFED13D12FE1E6500AB2E2A /* README.md */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DFFED11312FE04DA00AB2E2A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DFFED0E712FE04D900AB2E2A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DFFED0EF12FE04D900AB2E2A;
-			remoteInfo = FlyingImages;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DFFED0F012FE04D900AB2E2A /* FlyingImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,18 +27,12 @@
 		DFFED0FE12FE04D900AB2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFFED10012FE04D900AB2E2A /* FlyingImages-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlyingImages-Prefix.pch"; sourceTree = "<group>"; };
 		DFFED10112FE04D900AB2E2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DFFED10412FE04D900AB2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		DFFED10612FE04D900AB2E2A /* FlyingImagesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyingImagesAppDelegate.h; sourceTree = "<group>"; };
 		DFFED10712FE04D900AB2E2A /* FlyingImagesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyingImagesAppDelegate.m; sourceTree = "<group>"; };
 		DFFED10A12FE04DA00AB2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		DFFED11112FE04DA00AB2E2A /* FlyingImagesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyingImagesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFFED11712FE04DA00AB2E2A /* FlyingImagesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlyingImagesTests-Info.plist"; sourceTree = "<group>"; };
-		DFFED11912FE04DA00AB2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DFFED11B12FE04DA00AB2E2A /* FlyingImagesTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlyingImagesTests-Prefix.pch"; sourceTree = "<group>"; };
-		DFFED11C12FE04DA00AB2E2A /* FlyingImagesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyingImagesTests.h; sourceTree = "<group>"; };
-		DFFED11E12FE04DA00AB2E2A /* FlyingImagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyingImagesTests.m; sourceTree = "<group>"; };
-		DFFED12812FE06EF00AB2E2A /* CA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CA.png; sourceTree = "<group>"; };
+		DFFED12812FE06EF00AB2E2A /* CA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CA.png; path = FlyingImages/CA.png; sourceTree = "<group>"; };
 		DFFED12A12FE0A5E00AB2E2A /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		DFFED13D12FE1E6500AB2E2A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,22 +45,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFFED10D12FE04DA00AB2E2A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFFED11212FE04DA00AB2E2A /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		DFFED0E512FE04D900AB2E2A = {
 			isa = PBXGroup;
 			children = (
-				DFFED0FA12FE04D900AB2E2A /* FlyingImages */,
-				DFFED11512FE04DA00AB2E2A /* FlyingImagesTests */,
+				DFFED0FA12FE04D900AB2E2A /* Classes */,
+				DFFED13B12FE1DF200AB2E2A /* Interface */,
+				DFFED0FB12FE04D900AB2E2A /* Resources */,
 				DFFED0F312FE04D900AB2E2A /* Frameworks */,
 				DFFED0F112FE04D900AB2E2A /* Products */,
 			);
@@ -90,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				DFFED0F012FE04D900AB2E2A /* FlyingImages.app */,
-				DFFED11112FE04DA00AB2E2A /* FlyingImagesTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,48 +87,44 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		DFFED0FA12FE04D900AB2E2A /* FlyingImages */ = {
+		DFFED0FA12FE04D900AB2E2A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				DFFED10612FE04D900AB2E2A /* FlyingImagesAppDelegate.h */,
 				DFFED10712FE04D900AB2E2A /* FlyingImagesAppDelegate.m */,
-				DFFED10912FE04DA00AB2E2A /* MainMenu.xib */,
-				DFFED0FB12FE04D900AB2E2A /* Supporting Files */,
 			);
+			name = Classes;
 			path = FlyingImages;
 			sourceTree = "<group>";
 		};
-		DFFED0FB12FE04D900AB2E2A /* Supporting Files */ = {
+		DFFED0FB12FE04D900AB2E2A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				DFFED0FC12FE04D900AB2E2A /* FlyingImages-Info.plist */,
 				DFFED0FD12FE04D900AB2E2A /* InfoPlist.strings */,
-				DFFED12812FE06EF00AB2E2A /* CA.png */,
 				DFFED10012FE04D900AB2E2A /* FlyingImages-Prefix.pch */,
 				DFFED10112FE04D900AB2E2A /* main.m */,
-				DFFED10312FE04D900AB2E2A /* Credits.rtf */,
+				DFFED13D12FE1E6500AB2E2A /* README.md */,
 			);
-			name = "Supporting Files";
+			name = Resources;
+			path = FlyingImages;
 			sourceTree = "<group>";
 		};
-		DFFED11512FE04DA00AB2E2A /* FlyingImagesTests */ = {
+		DFFED13B12FE1DF200AB2E2A /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				DFFED11C12FE04DA00AB2E2A /* FlyingImagesTests.h */,
-				DFFED11E12FE04DA00AB2E2A /* FlyingImagesTests.m */,
-				DFFED11612FE04DA00AB2E2A /* Supporting Files */,
+				DFFED10912FE04DA00AB2E2A /* MainMenu.xib */,
+				DFFED13C12FE1E0900AB2E2A /* Images */,
 			);
-			path = FlyingImagesTests;
+			name = Interface;
 			sourceTree = "<group>";
 		};
-		DFFED11612FE04DA00AB2E2A /* Supporting Files */ = {
+		DFFED13C12FE1E0900AB2E2A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				DFFED11712FE04DA00AB2E2A /* FlyingImagesTests-Info.plist */,
-				DFFED11812FE04DA00AB2E2A /* InfoPlist.strings */,
-				DFFED11B12FE04DA00AB2E2A /* FlyingImagesTests-Prefix.pch */,
+				DFFED12812FE06EF00AB2E2A /* CA.png */,
 			);
-			name = "Supporting Files";
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,25 +147,6 @@
 			productReference = DFFED0F012FE04D900AB2E2A /* FlyingImages.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DFFED11012FE04DA00AB2E2A /* FlyingImagesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DFFED12512FE04DA00AB2E2A /* Build configuration list for PBXNativeTarget "FlyingImagesTests" */;
-			buildPhases = (
-				DFFED10C12FE04DA00AB2E2A /* Sources */,
-				DFFED10D12FE04DA00AB2E2A /* Frameworks */,
-				DFFED10E12FE04DA00AB2E2A /* Resources */,
-				DFFED10F12FE04DA00AB2E2A /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DFFED11412FE04DA00AB2E2A /* PBXTargetDependency */,
-			);
-			name = FlyingImagesTests;
-			productName = FlyingImagesTests;
-			productReference = DFFED11112FE04DA00AB2E2A /* FlyingImagesTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,7 +168,6 @@
 			projectRoot = "";
 			targets = (
 				DFFED0EF12FE04D900AB2E2A /* FlyingImages */,
-				DFFED11012FE04DA00AB2E2A /* FlyingImagesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,38 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFFED0FF12FE04D900AB2E2A /* InfoPlist.strings in Resources */,
-				DFFED10512FE04D900AB2E2A /* Credits.rtf in Resources */,
 				DFFED10B12FE04DA00AB2E2A /* MainMenu.xib in Resources */,
 				DFFED12912FE06EF00AB2E2A /* CA.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DFFED10E12FE04DA00AB2E2A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFFED11A12FE04DA00AB2E2A /* InfoPlist.strings in Resources */,
-				DFFED11D12FE04DA00AB2E2A /* FlyingImagesTests.h in Resources */,
+				DFFED13E12FE1E6600AB2E2A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		DFFED10F12FE04DA00AB2E2A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DFFED0EC12FE04D900AB2E2A /* Sources */ = {
@@ -273,23 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFFED10C12FE04DA00AB2E2A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFFED11F12FE04DA00AB2E2A /* FlyingImagesTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DFFED11412FE04DA00AB2E2A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DFFED0EF12FE04D900AB2E2A /* FlyingImages */;
-			targetProxy = DFFED11312FE04DA00AB2E2A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DFFED0FD12FE04D900AB2E2A /* InfoPlist.strings */ = {
@@ -300,28 +207,13 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DFFED10312FE04D900AB2E2A /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFFED10412FE04D900AB2E2A /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
 		DFFED10912FE04DA00AB2E2A /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DFFED10A12FE04DA00AB2E2A /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		DFFED11812FE04DA00AB2E2A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFFED11912FE04DA00AB2E2A /* en */,
-			);
-			name = InfoPlist.strings;
+			path = FlyingImages;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,52 +280,6 @@
 			};
 			name = Release;
 		};
-		DFFED12612FE04DA00AB2E2A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlyingImages.app/Contents/MacOS/FlyingImages";
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FlyingImagesTests/FlyingImagesTests-Prefix.pch";
-				INFOPLIST_FILE = "FlyingImagesTests/FlyingImagesTests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		DFFED12712FE04DA00AB2E2A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlyingImages.app/Contents/MacOS/FlyingImages";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FlyingImagesTests/FlyingImagesTests-Prefix.pch";
-				INFOPLIST_FILE = "FlyingImagesTests/FlyingImagesTests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,14 +299,7 @@
 				DFFED12412FE04DA00AB2E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		DFFED12512FE04DA00AB2E2A /* Build configuration list for PBXNativeTarget "FlyingImagesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DFFED12612FE04DA00AB2E2A /* Debug */,
-				DFFED12712FE04DA00AB2E2A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
