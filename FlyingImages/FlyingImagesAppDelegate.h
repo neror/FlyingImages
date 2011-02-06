@@ -9,10 +9,13 @@
 #import <Cocoa/Cocoa.h>
 
 @interface FlyingImagesAppDelegate : NSObject <NSApplicationDelegate> {
-@private
   NSWindow *window;
+  NSView *imageContainer;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSView *imageContainer;
+
+- (IBAction)runAnimation:(id)sender;
 
 @end

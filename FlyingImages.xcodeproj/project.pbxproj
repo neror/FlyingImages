@@ -17,6 +17,8 @@
 		DFFED11A12FE04DA00AB2E2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFFED11812FE04DA00AB2E2A /* InfoPlist.strings */; };
 		DFFED11D12FE04DA00AB2E2A /* FlyingImagesTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DFFED11C12FE04DA00AB2E2A /* FlyingImagesTests.h */; };
 		DFFED11F12FE04DA00AB2E2A /* FlyingImagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFED11E12FE04DA00AB2E2A /* FlyingImagesTests.m */; };
+		DFFED12912FE06EF00AB2E2A /* CA.png in Resources */ = {isa = PBXBuildFile; fileRef = DFFED12812FE06EF00AB2E2A /* CA.png */; };
+		DFFED12B12FE0A5E00AB2E2A /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFED12A12FE0A5E00AB2E2A /* Quartz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +37,22 @@
 		DFFED0F712FE04D900AB2E2A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DFFED0F812FE04D900AB2E2A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DFFED0F912FE04D900AB2E2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DFFED0FC12FE04D900AB2E2A /* FlyingImages-Info.plist */ = {isa = PBXFileReference; path = "FlyingImages-Info.plist"; sourceTree = "<group>"; };
+		DFFED0FC12FE04D900AB2E2A /* FlyingImages-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlyingImages-Info.plist"; sourceTree = "<group>"; };
 		DFFED0FE12FE04D900AB2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DFFED10012FE04D900AB2E2A /* FlyingImages-Prefix.pch */ = {isa = PBXFileReference; path = "FlyingImages-Prefix.pch"; sourceTree = "<group>"; };
+		DFFED10012FE04D900AB2E2A /* FlyingImages-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlyingImages-Prefix.pch"; sourceTree = "<group>"; };
 		DFFED10112FE04D900AB2E2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DFFED10412FE04D900AB2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		DFFED10612FE04D900AB2E2A /* FlyingImagesAppDelegate.h */ = {isa = PBXFileReference; path = FlyingImagesAppDelegate.h; sourceTree = "<group>"; };
+		DFFED10612FE04D900AB2E2A /* FlyingImagesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyingImagesAppDelegate.h; sourceTree = "<group>"; };
 		DFFED10712FE04D900AB2E2A /* FlyingImagesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyingImagesAppDelegate.m; sourceTree = "<group>"; };
 		DFFED10A12FE04DA00AB2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DFFED11112FE04DA00AB2E2A /* FlyingImagesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyingImagesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFFED11712FE04DA00AB2E2A /* FlyingImagesTests-Info.plist */ = {isa = PBXFileReference; path = "FlyingImagesTests-Info.plist"; sourceTree = "<group>"; };
+		DFFED11712FE04DA00AB2E2A /* FlyingImagesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlyingImagesTests-Info.plist"; sourceTree = "<group>"; };
 		DFFED11912FE04DA00AB2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DFFED11B12FE04DA00AB2E2A /* FlyingImagesTests-Prefix.pch */ = {isa = PBXFileReference; path = "FlyingImagesTests-Prefix.pch"; sourceTree = "<group>"; };
+		DFFED11B12FE04DA00AB2E2A /* FlyingImagesTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlyingImagesTests-Prefix.pch"; sourceTree = "<group>"; };
 		DFFED11C12FE04DA00AB2E2A /* FlyingImagesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyingImagesTests.h; sourceTree = "<group>"; };
 		DFFED11E12FE04DA00AB2E2A /* FlyingImagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyingImagesTests.m; sourceTree = "<group>"; };
+		DFFED12812FE06EF00AB2E2A /* CA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CA.png; sourceTree = "<group>"; };
+		DFFED12A12FE0A5E00AB2E2A /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFED12B12FE0A5E00AB2E2A /* Quartz.framework in Frameworks */,
 				DFFED0F512FE04D900AB2E2A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +98,7 @@
 		DFFED0F312FE04D900AB2E2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFFED12A12FE0A5E00AB2E2A /* Quartz.framework */,
 				DFFED0F412FE04D900AB2E2A /* Cocoa.framework */,
 				DFFED0F612FE04D900AB2E2A /* Other Frameworks */,
 			);
@@ -125,6 +131,7 @@
 			children = (
 				DFFED0FC12FE04D900AB2E2A /* FlyingImages-Info.plist */,
 				DFFED0FD12FE04D900AB2E2A /* InfoPlist.strings */,
+				DFFED12812FE06EF00AB2E2A /* CA.png */,
 				DFFED10012FE04D900AB2E2A /* FlyingImages-Prefix.pch */,
 				DFFED10112FE04D900AB2E2A /* main.m */,
 				DFFED10312FE04D900AB2E2A /* Credits.rtf */,
@@ -225,6 +232,7 @@
 				DFFED0FF12FE04D900AB2E2A /* InfoPlist.strings in Resources */,
 				DFFED10512FE04D900AB2E2A /* Credits.rtf in Resources */,
 				DFFED10B12FE04DA00AB2E2A /* MainMenu.xib in Resources */,
+				DFFED12912FE06EF00AB2E2A /* CA.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
