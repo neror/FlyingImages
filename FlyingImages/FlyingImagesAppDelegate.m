@@ -27,7 +27,7 @@
 
 @interface FlyingImagesAppDelegate()
 
-- (CATransform3D)centeringTransformForView:(NSView *)imageView;
+- (CATransform3D)originTransformForLayer:(CALayer *)layer;
 
 @end
 
@@ -35,47 +35,70 @@
 
 @synthesize window;
 @synthesize imageContainer;
+@synthesize durationStepper;
 
-- (CATransform3D)centeringTransformForView:(NSView *)imageView {
-  CALayer *layer = [imageView layer];
-  CGSize layerSize = [layer bounds].size;
+- (CATransform3D)originTransformForLayer:(CALayer *)layer; {
   CGPoint layerPosition = [layer position];
-
-  CGRect superBounds = [[layer superlayer] bounds];
-  CGPoint center = CGPointMake(CGRectGetMidX(superBounds) - layerSize.width / 2.f, 
-                               CGRectGetMidY(superBounds) - layerSize.height / 2.f);
-  
-  CATransform3D originTransform = CATransform3DMakeTranslation(center.x - layerPosition.x, 
-                                                               center.y - layerPosition.y, 
-                                                               0.f);
-  return originTransform;
+  CATransform3D centeringTransform = CATransform3DMakeTranslation(17.f - layerPosition.x, -layerPosition.y, 0.f);
+  return centeringTransform;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  [[self durationStepper] setIncrement:.05f];
+  [[self durationStepper] setDoubleValue:.4f];
+  shouldReverse_ = NO;
+
   //Start with all of the images at the origin
   [CATransaction begin];
   [CATransaction setDisableActions:YES];
-  for (NSImageView *imageView in [[self imageContainer] subviews]) {    
-    [[imageView layer] setTransform:[self centeringTransformForView:imageView]];
+  for (CALayer *imageLayer in [[[self imageContainer] layer] sublayers]) {    
+    [imageLayer setTransform:[self originTransformForLayer:imageLayer]];
   }
   [CATransaction commit];
 }
 
 - (IBAction)runAnimation:(id)sender {
-  BOOL shiftKeyDown = ([[NSApp currentEvent] modifierFlags] & (NSShiftKeyMask | NSAlphaShiftKeyMask)) != 0;
-  if(shiftKeyDown) {
-    [[[self imageContainer] layer] setSpeed:.2f];
-  } else {
-    [[[self imageContainer] layer] setSpeed:1.f];
-  }
+  CALayer *containerLayer = [[self imageContainer] layer];
   
-  for (NSImageView *imageView in [[self imageContainer] subviews]) {
-    if(CATransform3DIsIdentity([[imageView layer] transform])) {
-      [[imageView layer] setTransform:[self centeringTransformForView:imageView]];
+  NSTimeInterval delay = 0.f;
+  NSTimeInterval delayStep = .05f;
+  NSTimeInterval singleDuration = [[self durationStepper] doubleValue];
+  NSTimeInterval fullDuration = singleDuration + (delayStep * [[containerLayer sublayers] count]);
+  
+  NSEnumerator *imageLayerEnumerator;
+  if(shouldReverse_) {
+    imageLayerEnumerator = [[containerLayer sublayers] reverseObjectEnumerator];
+  } else {
+    imageLayerEnumerator = [[containerLayer sublayers] objectEnumerator];
+  } 
+  
+  for (CALayer *imageLayer in imageLayerEnumerator) {
+    CATransform3D currentTransform = [imageLayer transform];
+    CATransform3D newTransform;
+    
+    if(shouldReverse_) {
+      newTransform = [self originTransformForLayer:imageLayer];
     } else {
-      [[imageView layer] setTransform:CATransform3DIdentity];
+      newTransform = CATransform3DIdentity;
     }
+    
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform"];
+    anim.beginTime = delay;
+    anim.fromValue = [NSValue valueWithCATransform3D:currentTransform];
+    anim.toValue = [NSValue valueWithCATransform3D:newTransform];
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anim.fillMode = kCAFillModeBackwards;
+    anim.duration = singleDuration;
+    
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    group.animations = [NSArray arrayWithObject:anim];
+    group.duration = fullDuration;
+    
+    [imageLayer setTransform:newTransform];
+    [imageLayer addAnimation:group forKey:@"transform"];
+    delay += delayStep;
   }
+  shouldReverse_ = !shouldReverse_;
 }
 
 @end

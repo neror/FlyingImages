@@ -27,10 +27,14 @@
 @interface FlyingImagesAppDelegate : NSObject <NSApplicationDelegate> {
   NSWindow *window;
   NSView *imageContainer;
+  NSStepper *durationStepper;
+  
+  BOOL shouldReverse_;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSView *imageContainer;
+@property (assign) IBOutlet NSStepper *durationStepper;
 
 - (IBAction)runAnimation:(id)sender;
 
