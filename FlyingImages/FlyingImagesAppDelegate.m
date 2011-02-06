@@ -39,7 +39,7 @@
 
 - (CATransform3D)originTransformForLayer:(CALayer *)layer; {
   CGPoint layerPosition = [layer position];
-  CATransform3D centeringTransform = CATransform3DMakeTranslation(17.f - layerPosition.x, -layerPosition.y, 0.f);
+  CATransform3D centeringTransform = CATransform3DMakeTranslation(20.f - layerPosition.x, -layerPosition.y, 0.f);
   return centeringTransform;
 }
 
