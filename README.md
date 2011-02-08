@@ -4,7 +4,7 @@ A simple example using Core Animation (specificatlly tranforms) to animate a gri
 
 ##Video
 
-Here's a YouTube video of this code in action: http://www.youtube.com/embed/vBv7iTEZJII
+Here's a [YouTube video](http://www.youtube.com/embed/vBv7iTEZJII) of this code in action.
 
 ##License
 
