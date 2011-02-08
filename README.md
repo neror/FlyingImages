@@ -2,6 +2,11 @@
 
 A simple example using Core Animation (specificatlly tranforms) to animate a grid of NSViews.
 
+##Video
+
+Here's a YouTube video of this code in action:
+
+<iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/vBv7iTEZJII?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ##License
 
